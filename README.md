@@ -483,43 +483,6 @@ E:\ANDROID_STUDIO\HOME_SERVICES_APP_FOR_SALE\LIB
         custom_button.dart
 ---
 
-## 🛠️ Customize Demo Data
-
-All static data is located in `lib/data/`. You can easily modify or add new services, technicians, reviews, and categories.
-
-### 📂 Data Files
-
-| File | Purpose |
-|------|---------|
-| `categories_data.dart` | Categories and their services |
-| `technicians_data.dart` | Service providers |
-| `reviews_data.dart` | Customer reviews |
-| `how_it_works_data.dart` | Onboarding tutorial steps |
-
----
-
----
-
-### ➕ Add a New Technician
-
-1. Open `lib/data/technicians_data.dart`
-2. Add a new technician:
-
-```dart
-final newTech = TechnicianModel(
-  id: 't10',                    // Unique ID
-  name: 'Mohamed Ali',
-  photo: 'assets/images/technicians/mohamed.png',
-  rating: 4.8,
-  completedJobs: 320,
-  specialty: 'Plumbing Expert',
-);
-
-techniciansData.add(newTech);
-```
-
----
-
 ### ➕ Add a New Review
 
 1. Open `lib/data/reviews_data.dart`
