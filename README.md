@@ -77,7 +77,7 @@ A modern, feature-rich Flutter application that connects users with professional
 
 Watch a full walkthrough of the app in action:
 
-▶️ [Watch Demo Video](https://drive.google.com/file/d/1ITlBB_11qw-iIgBnZv2_QVBg5gMuql-E/view?usp=drive_link)
+[▶️ Watch the Full App Demo](https://drive.google.com/file/d/1bIblAu1Wh8OObI53C45e_w4QCZtmfJlF/view?usp=sharing)
 
 ---
 
