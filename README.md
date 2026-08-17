@@ -209,226 +209,278 @@ Watch a full walkthrough of the app in action:
 ## 📂 Project Structure
 
 ```
-home_services_app/
-├── lib/
-│   ├── main.dart
-│   ├── firebase_options.dart
-│   │
-│   ├── core/
-│   │   ├── cubit/
-│   │   │   ├── theme_cubit.dart
-│   │   │   └── theme_state.dart
-│   │   └── theme/
-│   │       ├── app_colors.dart
-│   │       ├── app_text_styles.dart
-│   │       ├── app_theme.dart
-│   │       └── dark_app_colors.dart
-│   │
-│   ├── data/
-│   │   ├── categories_data.dart
-│   │   ├── categories_items_data.dart
-│   │   ├── how_it_works_data.dart
-│   │   ├── reviews_data.dart
-│   │   └── technicians_data.dart
-│   │
-│   ├── models/
-│   │   ├── booking_model.dart
-│   │   ├── booking_confirmation_model.dart
-│   │   ├── booking_history_model.dart
-│   │   ├── category_model.dart
-│   │   ├── category_item_model.dart
-│   │   ├── how_it_works_step.dart
-│   │   ├── payment_method.dart
-│   │   ├── review_model.dart
-│   │   ├── service_model.dart
-│   │   ├── technician_model.dart
-│   │   └── user_model.dart
-│   │
-│   ├── routes/
-│   │   ├── app_routes.dart
-│   │   └── app_router.dart
-│   │
-│   ├── widgets/
-│   │   ├── custom_app_bar.dart
-│   │   ├── custom_bottom_nav.dart
-│   │   └── custom_button.dart
-│   │
-│   └── features/
-│       │
-│       ├── Splash/
-│       │   └── Splash_Screen.dart
-│       │
-│       ├── onboarding/
-│       │   └── Onboarding.dart
-│       │
-│       ├── Auth/
-│       │   ├── auth_screen.dart
-│       │   ├── cubit/
-│       │   │   ├── auth_cubit.dart
-│       │   │   └── auth_state.dart
-│       │   └── widgets/
-│       │       ├── auth_button.dart
-│       │       └── auth_text_field.dart
-│       │
-│       ├── home/
-│       │   ├── cubit/
-│       │   │   ├── home_cubit.dart
-│       │   │   └── home_state.dart
-│       │   ├── presentation/
-│       │   │   └── home_screen.dart
-│       │   └── widgets/
-│       │       ├── categories_section.dart
-│       │       ├── category_card.dart
-│       │       ├── hero_section.dart
-│       │       ├── offer_slider.dart
-│       │       ├── popular_services_section.dart
-│       │       ├── quick_actions.dart
-│       │       ├── reviews_section.dart
-│       │       └── review_card.dart
-│       │
-│       ├── search/
-│       │   └── all_services_search_screen.dart
-│       │
-│       ├── service_listing/
-│       │   ├── service_listing_screen.dart
-│       │   ├── cubit/
-│       │   │   ├── service_listing_cubit.dart
-│       │   │   └── service_listing_state.dart
-│       │   └── widgets/
-│       │       ├── badge.dart
-│       │       ├── category_banner.dart
-│       │       ├── duration_chip.dart
-│       │       ├── empty_services.dart
-│       │       ├── filter_chips.dart
-│       │       ├── price_section.dart
-│       │       ├── rating_chip.dart
-│       │       ├── search_bar_widget.dart
-│       │       ├── service_list_card.dart
-│       │       └── view_details_button.dart
-│       │
-│       ├── service_details/
-│       │   ├── service_details_screen.dart
-│       │   ├── cubit/
-│       │   │   ├── service_details_cubit.dart
-│       │   │   └── service_details_state.dart
-│       │   └── widgets/
-│       │       ├── service_bottom_bar.dart
-│       │       ├── service_description_content.dart
-│       │       ├── service_details_app_bar.dart
-│       │       ├── service_included_content.dart
-│       │       ├── service_stats_row.dart
-│       │       └── service_tabs_section.dart
-│       │
-│       ├── book_now/
-│       │   ├── cubit/
-│       │   │   ├── booking_cubit.dart
-│       │   │   └── booking_state.dart
-│       │   ├── presentation/
-│       │   │   ├── book_now_screen.dart
-│       │   │   └── technician_profile_screen.dart
-│       │   └── Widgets/
-│       │       ├── analog_clock_painter.dart
-│       │       ├── booking_address.dart
-│       │       ├── booking_app_bar.dart
-│       │       ├── booking_bottom_sheet.dart
-│       │       ├── booking_date_dialog.dart
-│       │       ├── booking_date_picker.dart
-│       │       ├── booking_dialog.dart
-│       │       ├── booking_payment_method.dart
-│       │       ├── booking_photo_upload.dart
-│       │       ├── booking_section_title.dart
-│       │       ├── booking_service_card.dart
-│       │       ├── booking_summary.dart
-│       │       ├── booking_technician_picker.dart
-│       │       ├── booking_time_dialog.dart
-│       │       └── booking_time_picker.dart
-│       │
-│       ├── bookings/
-│       │   ├── cubit/
-│       │   │   ├── bookings_cubit.dart
-│       │   │   └── bookings_state.dart
-│       │   ├── presentation/
-│       │   │   └── bookings_screen.dart
-│       │   ├── styles/
-│       │   │   └── booking_styles.dart
-│       │   └── widgets/
-│       │       ├── swipe_hint.dart
-│       │       ├── swipe_to_delete.dart
-│       │       ├── booking_card/
-│       │       │   ├── action_button.dart
-│       │       │   ├── booking_card.dart
-│       │       │   ├── booking_card_actions.dart
-│       │       │   ├── booking_card_details.dart
-│       │       │   ├── booking_card_header.dart
-│       │       │   ├── detail_item.dart
-│       │       │   ├── price_tag.dart
-│       │       │   ├── service_image.dart
-│       │       │   └── status_badge.dart
-│       │       ├── booking_tabs/
-│       │       │   ├── booking_tabs.dart
-│       │       │   └── tab_button.dart
-│       │       └── dialogs/
-│       │           ├── cancel_booking_dialog.dart
-│       │           ├── rating_dialog/
-│       │           │   ├── feedback_chip.dart
-│       │           │   ├── option_card.dart
-│       │           │   ├── rating_dialog.dart
-│       │           │   └── rating_progress.dart
-│       │           └── steps/
-│       │               ├── completion_step.dart
-│       │               ├── done_step.dart
-│       │               ├── feedback_step.dart
-│       │               └── rating_step.dart
-│       │
-│       ├── booking_confirmed/
-│       │   ├── presentation/
-│       │   │   └── booking_confirmed.dart
-│       │   └── Widgets/
-│       │       ├── confirmed_back_button.dart
-│       │       ├── confirmed_badge.dart
-│       │       ├── confirmed_details_card.dart
-│       │       ├── confirmed_divider.dart
-│       │       ├── confirmed_footer.dart
-│       │       ├── confirmed_info_row.dart
-│       │       ├── confirmed_success_icon.dart
-│       │       ├── confirmed_title.dart
-│       │       └── full_screen_map_screen.dart
-│       │
-│       ├── how_it_works/
-│       │   ├── screens/
-│       │   │   └── how_it_works_screen.dart
-│       │   └── widgets/
-│       │       ├── bubble_outline_painter.dart
-│       │       ├── how_it_works_dots.dart
-│       │       ├── how_it_works_progress_bar.dart
-│       │       ├── phone_mockup.dart
-│       │       ├── rotating_background_rings.dart
-│       │       ├── speech_bubble_clipper.dart
-│       │       └── step_card.dart
-│       │
-│       ├── location/
-│       │   ├── service_location_card.dart
-│       │   ├── cubit/
-│       │   │   ├── location_cubit.dart
-│       │   │   └── location_state.dart
-│       │   ├── data/
-│       │   │   └── repositories/
-│       │   │       └── location_repository.dart
-│       │   ├── domain/
-│       │   │   └── entities/
-│       │   │       └── location.dart
-│       │   └── presentation/
-│       │       └── location_screen.dart
-│       │
-│       └── profile/
-│           └── profile_screen.dart
+E:\ANDROID_STUDIO\HOME_SERVICES_APP_FOR_SALE\LIB
+│   firebase_options.dart
+│   main.dart
 │
-├── assets/
-├── test/
-├── pubspec.yaml
-└── README.md
-```
-
+├───core
+│   ├───cubit
+│   │       theme_cubit.dart
+│   │       theme_state.dart
+│   │
+│   └───theme
+│           app_colors.dart
+│           app_text_styles.dart
+│           app_theme.dart
+│           dark_app_colors.dart
+│
+├───data
+│       categories_data.dart
+│       categories_items_data.dart
+│       how_it_works_data.dart
+│       reviews_data.dart
+│       technicians_data.dart
+│
+├───features
+│   ├───Auth
+│   │   ├───cubit
+│   │   │       auth_cubit.dart
+│   │   │       auth_state.dart
+│   │   │
+│   │   ├───presentation
+│   │   │       auth_screen.dart
+│   │   │
+│   │   └───widgets
+│   │           auth_actions_widget.dart
+│   │           auth_button.dart
+│   │           auth_fields_section.dart
+│   │           auth_header_widget.dart
+│   │           auth_text_field.dart
+│   │           signup_form_widget.dart
+│   │
+│   ├───bookings
+│   │   ├───cubit
+│   │   │       bookings_cubit.dart
+│   │   │       bookings_state.dart
+│   │   │
+│   │   ├───presentation
+│   │   │       bookings_screen.dart
+│   │   │
+│   │   ├───styles
+│   │   │       booking_styles.dart
+│   │   │
+│   │   └───widgets
+│   │       │   swipe_hint.dart
+│   │       │   swipe_to_delete.dart
+│   │       │
+│   │       ├───booking_card
+│   │       │       action_button.dart
+│   │       │       booking_card.dart
+│   │       │       booking_card_actions.dart
+│   │       │       booking_card_details.dart
+│   │       │       booking_card_header.dart
+│   │       │       detail_item.dart
+│   │       │       price_tag.dart
+│   │       │       service_image.dart
+│   │       │       status_badge.dart
+│   │       │
+│   │       ├───booking_tabs
+│   │       │       booking_tabs.dart
+│   │       │       tab_button.dart
+│   │       │
+│   │       └───dialogs
+│   │           │   cancel_booking_dialog.dart
+│   │           │
+│   │           ├───rating_dialog
+│   │           │       feedback_chip.dart
+│   │           │       option_card.dart
+│   │           │       rating_dialog.dart
+│   │           │       rating_progress.dart
+│   │           │
+│   │           └───steps
+│   │                   completion_step.dart
+│   │                   done_step.dart
+│   │                   feedback_step.dart
+│   │                   not_completed_dialog.dart
+│   │                   rating_step.dart
+│   │
+│   ├───booking_confirmed
+│   │   ├───presentation
+│   │   │       booking_confirmed.dart
+│   │   │
+│   │   └───Widgets
+│   │           confirmed_back_button.dart
+│   │           confirmed_badge.dart
+│   │           confirmed_details_card.dart
+│   │           confirmed_divider.dart
+│   │           confirmed_footer.dart
+│   │           confirmed_info_row.dart
+│   │           confirmed_success_icon.dart
+│   │           confirmed_title.dart
+│   │           full_screen_map_screen.dart
+│   │
+│   ├───book_now
+│   │   ├───cubit
+│   │   │       booking_cubit.dart
+│   │   │       booking_state.dart
+│   │   │
+│   │   ├───presentation
+│   │   │       book_now_screen.dart
+│   │   │       technician_profile_screen.dart
+│   │   │
+│   │   └───Widgets
+│   │       │   analog_clock_painter.dart
+│   │       │   booking_address.dart
+│   │       │   booking_app_bar.dart
+│   │       │   booking_bottom_sheet.dart
+│   │       │   booking_date_dialog.dart
+│   │       │   booking_date_picker.dart
+│   │       │   booking_dialog.dart
+│   │       │   booking_payment_method.dart
+│   │       │   booking_photo_upload.dart
+│   │       │   booking_section_title.dart
+│   │       │   booking_service_card.dart
+│   │       │   booking_summary.dart
+│   │       │   booking_technician_picker.dart
+│   │       │   booking_time_dialog.dart
+│   │       │   booking_time_picker.dart
+│   │       │
+│   │       └───technician_picker
+│   │               booking_technician_picker.dart
+│   │               technician_image_section.dart
+│   │               technician_info_section.dart
+│   │               technician_picker_card.dart
+│   │               technician_pro_badge.dart
+│   │               technician_selected_badge.dart
+│   │
+│   ├───explore
+│   │   ├───presentation
+│   │   │       explore_screen.dart
+│   │   │
+│   │   └───widgets
+│   │           empty_services_widget.dart
+│   │           explore_filter_row_widget.dart
+│   │           explore_search_bar_widget.dart
+│   │           service_result_tile_widget.dart
+│   │
+│   ├───home
+│   │   ├───cubit
+│   │   │       home_cubit.dart
+│   │   │       home_state.dart
+│   │   │
+│   │   ├───presentation
+│   │   │       home_screen.dart
+│   │   │
+│   │   └───widgets
+│   │           categories_section.dart
+│   │           category_card.dart
+│   │           hero_section.dart
+│   │           offer_slider.dart
+│   │           popular_services_section.dart
+│   │           quick_actions.dart
+│   │           reviews_section.dart
+│   │           review_card.dart
+│   │
+│   ├───how_it_works
+│   │   ├───screens
+│   │   │       how_it_works_screen.dart
+│   │   │
+│   │   └───widgets
+│   │           bubble_outline_painter.dart
+│   │           how_it_works_dots.dart
+│   │           how_it_works_progress_bar.dart
+│   │           phone_mockup.dart
+│   │           rotating_background_rings.dart
+│   │           speech_bubble_clipper.dart
+│   │           step_card.dart
+│   │
+│   ├───location
+│   │   ├───cubit
+│   │   │       location_cubit.dart
+│   │   │       location_state.dart
+│   │   │
+│   │   ├───data
+│   │   │   └───repositories
+│   │   │           location_repository.dart
+│   │   │
+│   │   ├───domain
+│   │   │   └───entities
+│   │   │           location.dart
+│   │   │
+│   │   ├───presentation
+│   │   │       location_screen.dart
+│   │   │
+│   │   └───widget
+│   │           service_location_card.dart
+│   │
+│   ├───onboarding
+│   │   ├───presentation
+│   │   │       onboarding_screen.dart
+│   │   │
+│   │   └───widget
+│   │           onboarding_card_widget.dart
+│   │           onboarding_footer_widget.dart
+│   │           onboarding_header_widget.dart
+│   │
+│   ├───profile
+│   │   ├───presentation
+│   │   │       profile_screen.dart
+│   │   │
+│   │   └───widgets
+│   │           profile_header.dart
+│   │           profile_login_prompt.dart
+│   │           profile_logout_button.dart
+│   │           profile_menu_card.dart
+│   │           profile_menu_tile.dart
+│   │           profile_section_title.dart
+│   │
+│   ├───service_details
+│   │   │   service_details_screen.dart
+│   │   │
+│   │   ├───cubit
+│   │   │       service_details_cubit.dart
+│   │   │       service_details_state.dart
+│   │   │
+│   │   └───widgets
+│   │           service_bottom_bar.dart
+│   │           service_description_content.dart
+│   │           service_details_app_bar.dart
+│   │           service_included_content.dart
+│   │           service_stats_row.dart
+│   │           service_tabs_section.dart
+│   │
+│   ├───service_listing
+│   │   │   service_listing_screen.dart
+│   │   │
+│   │   ├───cubit
+│   │   │       service_listing_cubit.dart
+│   │   │       service_listing_state.dart
+│   │   │
+│   │   └───widgets
+│   │           badge.dart
+│   │           category_banner.dart
+│   │           duration_chip.dart
+│   │           empty_services.dart
+│   │           filter_chips.dart
+│   │           price_section.dart
+│   │           rating_chip.dart
+│   │           service_list_card.dart
+│   │           view_details_button.dart
+│   │
+│   └───Splash
+│       ├───presentation
+│       │       splash_screen.dart
+│       │
+│       └───widgets
+│               splash_content_widget.dart
+│
+├───models
+│       booking_confirmation_model.dart
+│       booking_history_model.dart
+│       booking_model.dart
+│       category_item_model.dart
+│       category_model.dart
+│       how_it_works_step.dart
+│       payment_method.dart
+│       review_model.dart
+│       service_model.dart
+│       technician_model.dart
+│       user_model.dart
+│
+└───widgets
+        custom_app_bar.dart
+        custom_bottom_nav.dart
+        custom_button.dart
 ---
 
 ## 🛠️ Customize Demo Data
