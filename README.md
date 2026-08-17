@@ -498,39 +498,6 @@ All static data is located in `lib/data/`. You can easily modify or add new serv
 
 ---
 
-### ➕ Add a New Service
-
-1. Open `lib/data/categories_data.dart`
-2. Find your category (e.g., `cleaningServices`)
-3. Add a new service:
-
-```dart
-final newService = ServiceModel(
-  id: 's100',                          // Unique ID
-  name: 'Premium Cleaning',
-  subtitle: 'Deep cleaning service',
-  description: 'Full description here...',
-  image: 'assets/images/services/cleaning/premium.png',
-  price: 'Starting from 300 EGP',
-  rating: 4.9,
-  duration: '3 Hours',
-  categoryId: 'cleaning',
-  about: 'About the service...',
-  specialistName: 'Ahmed Hassan',
-  specialistTitle: 'CLEANING EXPERT',
-  specialistRating: 4.9,
-  reviewsCount: 150,
-  keyPoints: ['Key point 1', 'Key point 2'],
-  included: [
-    {'title': 'Service 1', 'description': 'Description 1'},
-  ],
-  statIcon: Icons.cleaning_services,
-  statLabel: 'Eco-Friendly',
-);
-
-cleaningServices.add(newService);
-```
-
 ---
 
 ### ➕ Add a New Technician
@@ -626,7 +593,7 @@ flutter run
 ## 📬 Contact
 
 - **Developer**: Youmna Khaled Youssef
-- **LinkedIn**: [Youmna Khaled](https://www.linkedin.com/in/ўỗǘṃňã-khaled-869251375?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+- **LinkedIn**: [Youmna Khaled](https://www.linkedin.com/in/youmna-khaled-869251375?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 - **GitHub**: [@Youmnakhaled20](https://github.com/Youmnakhaled20)
 
 ---
