@@ -1,146 +1,336 @@
+````markdown
 # 🏠 Home Services App
 
-> **Your One-Stop Solution for All Home Service Needs**
+### A Modern Flutter Home Services & Booking App
 
-A modern, feature-rich Flutter application that connects users with professional home service providers. Built with clean architecture, BLoC/Cubit state management, and a stunning dark/light theme experience.
+A modern and feature-rich home services mobile application built with **Flutter & Dart**.
 
----
-
-## 📱 Screenshots
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>Home Screen</b></td>
-      <td align="center"><b>Search Bar</b></td>
-      <td align="center"><b>Search Results</b></td>
-    </tr>
-    <tr>
-      <td><img src="s1.jpeg" width="200"/></td>
-      <td><img src="s2.jpeg" width="200"/></td>
-      <td><img src="s3.jpeg" width="200"/></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Service Details</b></td>
-      <td align="center"><b>Login Required</b></td>
-      <td align="center"><b>Create Account</b></td>
-    </tr>
-    <tr>
-      <td><img src="s4.jpeg" width="200"/></td>
-      <td><img src="s5.jpeg" width="200"/></td>
-      <td><img src="s6.jpeg" width="200"/></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Logged In</b></td>
-      <td align="center"><b>Booking Screen</b></td>
-      <td align="center"><b>Select Worker</b></td>
-    </tr>
-    <tr>
-      <td><img src="s7.jpeg" width="200"/></td>
-      <td><img src="s8.jpeg" width="200"/></td>
-      <td><img src="s9.jpeg" width="200"/></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Set Location</b></td>
-      <td align="center"><b>Pick Time</b></td>
-      <td align="center"><b>Confirm Booking</b></td>
-    </tr>
-    <tr>
-      <td><img src="s10.jpeg" width="200"/></td>
-      <td><img src="s11.jpeg" width="200"/></td>
-      <td><img src="s12.jpeg" width="200"/></td>
-    </tr>
-    <tr>
-      <td align="center"><b>My Bookings</b></td>
-      <td align="center"><b>Cancel Dialog</b></td>
-      <td align="center"><b>Rating Dialog</b></td>
-    </tr>
-    <tr>
-      <td><img src="s13.jpeg" width="200"/></td>
-      <td><img src="s14.jpeg" width="200"/></td>
-      <td><img src="s15.jpeg" width="200"/></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Completed Bookings</b></td>
-      <td align="center"><b>Booking Details</b></td>
-      <td align="center"><b>Profile Screen</b></td>
-    </tr>
-    <tr>
-      <td><img src="s16.jpeg" width="200"/></td>
-      <td><img src="s17.jpeg" width="200"/></td>
-      <td><img src="s18.jpeg" width="200"/></td>
-    </tr>
-  </table>
-</div>
+The app provides a complete user journey for discovering home services, viewing service details, selecting technicians, booking appointments, managing bookings, and choosing payment methods.
 
 ---
 
-## 🎥 Video Demo
+## ✨ Overview
 
-▶️ [Watch Demo Video](https://drive.google.com/file/d/1bIblAu1Wh8OObI53C45e_w4QCZtmfJlF/view?usp=sharing)
+**Home Services App** is a modern mobile UI/UX concept designed for home service marketplaces.
 
----
+It focuses on:
 
-## ✨ Features
+- Clean and modern UI
+- Smooth booking experience
+- Service discovery
+- Technician selection
+- Location & map integration
+- Booking management
+- Light & dark themes
+- Responsive layouts
 
-### 🎯 Core Features
-
-| Feature | Description |
-|---------|-------------|
-| **Browse Services** | Explore services by category (Cleaning, Maintenance, Moving, Security, Outdoor, Finishing) |
-| **Service Details** | View detailed information, pricing, duration, and provider ratings |
-| **Book Now** | Seamless booking flow with date/time selection using an analog clock picker |
-| **Booking Confirmation** | Instant confirmation with booking ID and transaction details |
-| **Booking Management** | Track upcoming, completed, and cancelled bookings with swipe-to-delete |
-| **Address Management** | Add, edit, and save service addresses |
-| **Special Instructions** | Add notes for service providers |
-| **Order Summary** | Clear breakdown of costs with total amount |
-
-### 🎨 UI/UX Features
-
-| Feature | Description |
-|---------|-------------|
-| **Glassmorphism Design** | Modern glass-effect cards |
-| **Neon Effects** | Beautiful glowing elements in dark mode |
-| **Dark/Light Theme** | Full support with a smooth toggle experience |
-| **Responsive Layout** | Works on all screen sizes |
-| **Custom Animations** | Smooth transitions and interactions throughout |
-| **Custom Font** | Unique typography for brand identity |
-| **SVG Icons** | High-quality icons for all categories |
-
-### 🔧 Technical Features
-
-| Feature | Description |
-|---------|-------------|
-| **Clean Architecture** | Feature-first structure with clear separation of concerns |
-| **BLoC/Cubit Pattern** | Predictable, testable state management |
-| **Custom Painter** | Analog clock widget for time selection |
-| **Swipe to Delete** | Dismissible bookings with undo functionality |
-| **Rating System** | Multi-step rating dialog for completed bookings |
-| **Cross-Platform** | Android & iOS support |
-| **Centralized Routing** | Organized navigation via `AppRoutes` / `AppRouter` |
-
-### 🎨 Theme & Colors
-
-| Mode | Palette |
-|------|---------|
-| ☀️ **Light** | Warm, natural colors · white background · translucent glass cards |
-| 🌙 **Dark** | Deep black background (`#0A0A0A`) · neon accent (`#4FE3B2`) · glowing highlights |
+> 📌 This repository is a **showcase/demo repository**.  
+> The full source code is not publicly available.
 
 ---
 
-## 🛠️ Tech Stack
+# 📱 App Preview
 
-| Technology | Version |
-|------------|---------|
-| Flutter | ^3.11.4 |
-| Dart | ^3.11.4 |
-| flutter_bloc | ^8.1.3 |
-| iconsax_flutter | ^1.0.0 |
-| flutter_svg | ^2.2.1 |
-| lottie | ^2.0.0 |
-| cupertino_icons | ^1.0.8 |
+## 🏠 Home & Discovery
+
+<p align="center">
+  <img src="s1.jpeg" width="220"/>
+  <img src="s2.jpeg" width="220"/>
+  <img src="s3.jpeg" width="220"/>
+</p>
+
+<p align="center">
+  <b>Home</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Search</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Search Results</b>
+</p>
 
 ---
 
-## 📂 Project Structure
+## 🔍 Services
+
+<p align="center">
+  <img src="s4.jpeg" width="220"/>
+  <img src="s5.jpeg" width="220"/>
+  <img src="s6.jpeg" width="220"/>
+</p>
+
+<p align="center">
+  <b>Service Details</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Login</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Create Account</b>
+</p>
+
+---
+
+## 📅 Booking Flow
+
+<p align="center">
+  <img src="s7.jpeg" width="220"/>
+  <img src="s8.jpeg" width="220"/>
+  <img src="s9.jpeg" width="220"/>
+</p>
+
+<p align="center">
+  <b>Logged In</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Booking</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Select Technician</b>
+</p>
+
+<p align="center">
+  <img src="s10.jpeg" width="220"/>
+  <img src="s11.jpeg" width="220"/>
+  <img src="s12.jpeg" width="220"/>
+</p>
+
+<p align="center">
+  <b>Location</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Time Selection</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Booking Confirmation</b>
+</p>
+
+---
+
+## 📋 Booking Management
+
+<p align="center">
+  <img src="s13.jpeg" width="220"/>
+  <img src="s14.jpeg" width="220"/>
+  <img src="s15.jpeg" width="220"/>
+</p>
+
+<p align="center">
+  <b>My Bookings</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Cancel Booking</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Rating</b>
+</p>
+
+<p align="center">
+  <img src="s16.jpeg" width="220"/>
+  <img src="s17.jpeg" width="220"/>
+  <img src="s18.jpeg" width="220"/>
+</p>
+
+<p align="center">
+  <b>Completed Bookings</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Booking Details</b> &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Profile</b>
+</p>
+
+---
+
+# 🎥 Demo Video
+
+<p align="center">
+
+[▶️ Watch the Full App Demo](https://drive.google.com/file/d/1bIblAu1Wh8OObI53C45e_w4QCZtmfJlF/view?usp=sharing)
+
+</p>
+
+---
+
+# 🚀 Features
+
+### 🏠 Service Discovery
+
+- Browse services by category
+- Search services
+- View service details
+- View pricing and duration
+- View ratings and reviews
+- Explore popular services
+- Promotional offers
+
+### 📅 Booking
+
+- Select a service
+- Choose date
+- Choose time
+- Select technician
+- Add service address
+- View location on map
+- Add special instructions
+- Upload photos
+- Select payment method
+- Review booking summary
+- Confirm booking
+
+### 📋 Booking Management
+
+- Upcoming bookings
+- Completed bookings
+- Cancelled bookings
+- Booking details
+- Cancel booking
+- Swipe to delete
+- Rating & feedback
+
+### 🎨 UI / UX
+
+- Modern responsive design
+- Light & dark themes
+- Glassmorphism elements
+- Neon accents in dark mode
+- Smooth animations
+- Custom typography
+- Custom SVG icons
+- Reusable UI components
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Used |
+|------------|------|
+| Flutter | ✅ |
+| Dart | ✅ |
+| Cubit / flutter_bloc | ✅ |
+| Google Maps | ✅ |
+| SVG | ✅ |
+| Lottie | ✅ |
+| Responsive UI | ✅ |
+| Light / Dark Theme | ✅ |
+
+---
+
+# 🧠 Architecture
+
+The project follows a **feature-first architecture** with separation between:
+
+```text
+Core
+Data
+Models
+Features
+Widgets
+Routes
+````
+
+State management is handled using **Cubit**.
+
+The application contains dedicated features for:
+
+```text
+Authentication
+Home
+Explore
+Services
+Service Details
+Booking
+Bookings
+Location
+Profile
+Onboarding
+How It Works
+```
+
+---
+
+# 🎨 Design
+
+### ☀️ Light Mode
+
+Clean and minimal interface with soft backgrounds and natural colors.
+
+### 🌙 Dark Mode
+
+Deep dark backgrounds combined with the signature:
+
+```text
+#4FE3B2
+```
+
+neon accent color for interactive elements and highlights.
+
+---
+
+# 📱 Main Screens
+
+```text
+Splash
+   ↓
+Onboarding
+   ↓
+Authentication
+   ↓
+Home
+   ├── Explore
+   ├── Services
+   ├── Service Details
+   ├── Book Now
+   │     ├── Date & Time
+   │     ├── Technician
+   │     ├── Location
+   │     └── Payment Method
+   │
+   ├── Booking Confirmation
+   ├── Bookings
+   └── Profile
+```
+
+---
+
+# 📊 Demo Data
+
+The current showcase uses **local demo data** for demonstration purposes.
+
+It includes sample:
+
+* Categories
+* Services
+* Technicians
+* Reviews
+* Offers
+* Bookings
+
+No real customer data is used.
+
+---
+
+# ⚠️ Current Scope
+
+This showcase focuses on the **mobile application experience and UI/UX**.
+
+The current demo does not include:
+
+* Production backend
+* Real payment gateway integration
+* Push notification system
+* Admin dashboard
+* Arabic localization
+
+Payment methods are currently presented as part of the booking UI/selection flow.
+
+---
+
+# 👩‍💻 Developer
+
+### Youmna Khaled Youssef
+
+**Flutter Developer**
+
+I enjoy building modern mobile applications with Flutter, focusing on clean UI, responsive layouts, reusable components, and practical user experiences.
+
+### Connect With Me
+
+* 💼 [LinkedIn](https://www.linkedin.com/in/youmna-khaled-869251375)
+* 💻 [GitHub](https://github.com/Youmnakhaled20)
+
+---
+
+<p align="center">
+
+### ⭐ Interested in the full source code?
+
+The complete Flutter source code is available for purchase.
+
+**Contact me for more information.**
+
+</p>
+
+---
+
+<p align="center">
+  Made with ❤️ using Flutter
+</p>
+```
