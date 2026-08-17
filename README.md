@@ -6,7 +6,6 @@
 A modern, feature-rich Flutter application that connects users with professional home service providers. Built with clean architecture, BLoC/Cubit state management, and a stunning dark/light theme experience.
 
 ---
-
 ## 📱 Screenshots
 
 <div align="center">
@@ -73,8 +72,6 @@ A modern, feature-rich Flutter application that connects users with professional
     </tr>
   </table>
 </div>
-
----
 
 ## 🎥 Video Demo
 
