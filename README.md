@@ -1,3 +1,4 @@
+```markdown
 # 🏠 Home Services App
 
 > **Your One-Stop Solution for All Home Service Needs**
@@ -144,3 +145,186 @@ A modern, feature-rich Flutter application that connects users with professional
 ---
 
 ## 📂 Project Structure
+
+```
+lib/
+├── main.dart
+├── firebase_options.dart
+│
+├── core/
+│   ├── cubit/
+│   │   ├── theme_cubit.dart
+│   │   └── theme_state.dart
+│   └── theme/
+│       ├── app_colors.dart
+│       ├── app_text_styles.dart
+│       ├── app_theme.dart
+│       └── dark_app_colors.dart
+│
+├── data/
+│   ├── categories_data.dart
+│   ├── categories_items_data.dart
+│   ├── how_it_works_data.dart
+│   ├── reviews_data.dart
+│   └── technicians_data.dart
+│
+├── models/
+│   ├── booking_confirmation_model.dart
+│   ├── booking_history_model.dart
+│   ├── booking_model.dart
+│   ├── category_item_model.dart
+│   ├── category_model.dart
+│   ├── how_it_works_step.dart
+│   ├── payment_method.dart
+│   ├── review_model.dart
+│   ├── service_model.dart
+│   ├── technician_model.dart
+│   └── user_model.dart
+│
+├── routes/
+│   ├── app_routes.dart
+│   └── app_router.dart
+│
+├── widgets/
+│   ├── custom_app_bar.dart
+│   ├── custom_bottom_nav.dart
+│   └── custom_button.dart
+│
+└── features/
+    ├── Splash/
+    ├── onboarding/
+    ├── Auth/
+    ├── home/
+    ├── explore/
+    ├── service_listing/
+    ├── service_details/
+    ├── book_now/
+    ├── booking_confirmed/
+    ├── bookings/
+    ├── location/
+    ├── how_it_works/
+    ├── profile/
+    └── offers/
+```
+
+---
+
+## 🛠️ Customize Demo Data
+
+All static data is located in `lib/data/`. You can easily modify or add new services, technicians, reviews, and categories.
+
+### 📂 Data Files
+
+| File | Purpose |
+|------|---------|
+| `categories_data.dart` | Categories and their services |
+| `technicians_data.dart` | Service providers |
+| `reviews_data.dart` | Customer reviews |
+| `how_it_works_data.dart` | Onboarding tutorial steps |
+
+---
+
+### ➕ Add a New Service
+
+1. Open `lib/data/categories_data.dart`
+2. Find your category (e.g., `cleaningServices`)
+3. Add a new service:
+
+```dart
+final newService = ServiceModel(
+  id: 's100',
+  name: 'Premium Cleaning',
+  subtitle: 'Deep cleaning service',
+  description: 'Full description here...',
+  image: 'assets/images/services/cleaning/premium.png',
+  price: 'Starting from 300 EGP',
+  rating: 4.9,
+  duration: '3 Hours',
+  categoryId: 'cleaning',
+  about: 'About the service...',
+  specialistName: 'Ahmed Hassan',
+  specialistTitle: 'CLEANING EXPERT',
+  specialistRating: 4.9,
+  reviewsCount: 150,
+  keyPoints: ['Key point 1', 'Key point 2'],
+  included: [
+    {'title': 'Service 1', 'description': 'Description 1'},
+  ],
+  statIcon: Icons.cleaning_services,
+  statLabel: 'Eco-Friendly',
+);
+
+cleaningServices.add(newService);
+```
+
+---
+
+### ➕ Add a New Technician
+
+1. Open `lib/data/technicians_data.dart`
+2. Add a new technician:
+
+```dart
+final newTech = TechnicianModel(
+  id: 't10',
+  name: 'Mohamed Ali',
+  photo: 'assets/images/technicians/mohamed.png',
+  rating: 4.8,
+  completedJobs: 320,
+  specialty: 'Plumbing Expert',
+);
+
+techniciansData.add(newTech);
+```
+
+---
+
+### ➕ Add a New Review
+
+1. Open `lib/data/reviews_data.dart`
+2. Add a new review:
+
+```dart
+final newReview = ReviewModel(
+  name: 'Sara Ahmed',
+  image: 'assets/images/user4.png',
+  rating: 5.0,
+  comment: 'Amazing service! Highly recommended.',
+);
+
+reviews.add(newReview);
+```
+
+---
+
+### 🔄 After Changes
+
+```bash
+flutter clean
+flutter pub get
+flutter run
+```
+
+### ⚠️ Important
+
+- ✅ Use **unique IDs** for all new items
+- ✅ Follow the **same data structure** as existing items
+- ✅ Image paths must match actual file locations
+- ✅ Changes reflect immediately with hot reload
+
+---
+
+## 📞 Contact
+
+- **Developer**: Youmna Khaled Youssef
+- **LinkedIn**: [Youmna Khaled](https://www.linkedin.com/in/youmna-khaled-869251375)
+- **GitHub**: [@Youmnakhaled20](https://github.com/Youmnakhaled20)
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://www.linkedin.com/in/youmna-khaled-869251375">Youmna Khaled Youssef</a>
+  <br>
+  ⭐ Don't forget to star this repository!
+</p>
+```
