@@ -17,9 +17,9 @@ A modern, feature-rich Flutter application that connects users with professional
       <td align="center"><b>Search Results</b></td>
     </tr>
     <tr>
-      <td><img src="assets/images/s1.jpeg" width="200"/></td>
-      <td><img src="assets/images/s2.jpeg" width="200"/></td>
-      <td><img src="assets/images/s3.jpeg" width="200"/></td>
+      <td><img src="s1.jpeg" width="200"/></td>
+      <td><img src="s2.jpeg" width="200"/></td>
+      <td><img src="s3.jpeg" width="200"/></td>
     </tr>
     <tr>
       <td align="center"><b>Service Details</b></td>
@@ -27,9 +27,9 @@ A modern, feature-rich Flutter application that connects users with professional
       <td align="center"><b>Create Account</b></td>
     </tr>
     <tr>
-      <td><img src="assets/images/s4.jpeg" width="200"/></td>
-      <td><img src="assets/images/s5.jpeg" width="200"/></td>
-      <td><img src="assets/images/s6.jpeg" width="200"/></td>
+      <td><img src="s4.jpeg" width="200"/></td>
+      <td><img src="s5.jpeg" width="200"/></td>
+      <td><img src="s6.jpeg" width="200"/></td>
     </tr>
     <tr>
       <td align="center"><b>Logged In</b></td>
@@ -37,9 +37,9 @@ A modern, feature-rich Flutter application that connects users with professional
       <td align="center"><b>Select Worker</b></td>
     </tr>
     <tr>
-      <td><img src="assets/images/s7.jpeg" width="200"/></td>
-      <td><img src="assets/images/s8.jpeg" width="200"/></td>
-      <td><img src="assets/images/s9.jpeg" width="200"/></td>
+      <td><img src="s7.jpeg" width="200"/></td>
+      <td><img src="s8.jpeg" width="200"/></td>
+      <td><img src="s9.jpeg" width="200"/></td>
     </tr>
     <tr>
       <td align="center"><b>Set Location</b></td>
@@ -47,9 +47,9 @@ A modern, feature-rich Flutter application that connects users with professional
       <td align="center"><b>Confirm Booking</b></td>
     </tr>
     <tr>
-      <td><img src="assets/images/s10.jpeg" width="200"/></td>
-      <td><img src="assets/images/s11.jpeg" width="200"/></td>
-      <td><img src="assets/images/s12.jpeg" width="200"/></td>
+      <td><img src="s10.jpeg" width="200"/></td>
+      <td><img src="s11.jpeg" width="200"/></td>
+      <td><img src="s12.jpeg" width="200"/></td>
     </tr>
     <tr>
       <td align="center"><b>My Bookings</b></td>
@@ -57,9 +57,9 @@ A modern, feature-rich Flutter application that connects users with professional
       <td align="center"><b>Rating Dialog</b></td>
     </tr>
     <tr>
-      <td><img src="assets/images/s13.jpeg" width="200"/></td>
-      <td><img src="assets/images/s14.jpeg" width="200"/></td>
-      <td><img src="assets/images/s15.jpeg" width="200"/></td>
+      <td><img src="s13.jpeg" width="200"/></td>
+      <td><img src="s14.jpeg" width="200"/></td>
+      <td><img src="s15.jpeg" width="200"/></td>
     </tr>
     <tr>
       <td align="center"><b>Completed Bookings</b></td>
@@ -67,9 +67,9 @@ A modern, feature-rich Flutter application that connects users with professional
       <td align="center"><b>Profile Screen</b></td>
     </tr>
     <tr>
-      <td><img src="assets/images/s16.jpeg" width="200"/></td>
-      <td><img src="assets/images/s17.jpeg" width="200"/></td>
-      <td><img src="assets/images/s18.jpeg" width="200"/></td>
+      <td><img src="s16.jpeg" width="200"/></td>
+      <td><img src="s17.jpeg" width="200"/></td>
+      <td><img src="s18.jpeg" width="200"/></td>
     </tr>
   </table>
 </div>
