@@ -1,3 +1,19 @@
+ممتاز! الـ Repository الجديد جاهز للـ README فقط 👏
+
+---
+
+## 🟢 دلوقتي اعملي كده:
+
+### 1. افتحي الـ README للتحرير
+- اضغطي على ملف `README.md`
+- اضغطي على **القلم ✏️ (Edit)**
+
+### 2. امسحي المحتوى القديم
+- حددي كل النص (Ctrl + A)
+- امسحيه (Delete)
+
+### 3. الصقي الـ README الجديد
+
 ```markdown
 # 🏠 Home Services App
 
@@ -192,211 +208,24 @@ lib/
 │
 └── features/
     ├── Splash/
-    │   └── presentation/
-    │       └── splash_screen.dart
-    │
     ├── onboarding/
-    │   └── presentation/
-    │       └── onboarding_screen.dart
-    │
     ├── Auth/
-    │   ├── cubit/
-    │   │   ├── auth_cubit.dart
-    │   │   └── auth_state.dart
-    │   ├── presentation/
-    │   │   └── auth_screen.dart
-    │   └── widgets/
-    │       ├── auth_actions_widget.dart
-    │       ├── auth_button.dart
-    │       ├── auth_fields_section.dart
-    │       ├── auth_header_widget.dart
-    │       ├── auth_text_field.dart
-    │       └── signup_form_widget.dart
-    │
     ├── home/
-    │   ├── cubit/
-    │   │   ├── home_cubit.dart
-    │   │   └── home_state.dart
-    │   ├── presentation/
-    │   │   └── home_screen.dart
-    │   └── widgets/
-    │       ├── categories_section.dart
-    │       ├── category_card.dart
-    │       ├── hero_section.dart
-    │       ├── offer_slider.dart
-    │       ├── popular_services_section.dart
-    │       ├── quick_actions.dart
-    │       ├── reviews_section.dart
-    │       └── review_card.dart
-    │
     ├── explore/
-    │   ├── presentation/
-    │   │   └── explore_screen.dart
-    │   └── widgets/
-    │       ├── empty_services_widget.dart
-    │       ├── explore_filter_row_widget.dart
-    │       ├── explore_search_bar_widget.dart
-    │       └── service_result_tile_widget.dart
-    │
     ├── service_listing/
-    │   ├── cubit/
-    │   │   ├── service_listing_cubit.dart
-    │   │   └── service_listing_state.dart
-    │   ├── service_listing_screen.dart
-    │   └── widgets/
-    │       ├── badge.dart
-    │       ├── category_banner.dart
-    │       ├── duration_chip.dart
-    │       ├── empty_services.dart
-    │       ├── filter_chips.dart
-    │       ├── price_section.dart
-    │       ├── rating_chip.dart
-    │       ├── service_list_card.dart
-    │       └── view_details_button.dart
-    │
     ├── service_details/
-    │   ├── cubit/
-    │   │   ├── service_details_cubit.dart
-    │   │   └── service_details_state.dart
-    │   ├── service_details_screen.dart
-    │   └── widgets/
-    │       ├── service_bottom_bar.dart
-    │       ├── service_description_content.dart
-    │       ├── service_details_app_bar.dart
-    │       ├── service_included_content.dart
-    │       ├── service_stats_row.dart
-    │       └── service_tabs_section.dart
-    │
     ├── book_now/
-    │   ├── cubit/
-    │   │   ├── booking_cubit.dart
-    │   │   └── booking_state.dart
-    │   ├── presentation/
-    │   │   ├── book_now_screen.dart
-    │   │   └── technician_profile_screen.dart
-    │   └── Widgets/
-    │       ├── analog_clock_painter.dart
-    │       ├── booking_address.dart
-    │       ├── booking_app_bar.dart
-    │       ├── booking_bottom_sheet.dart
-    │       ├── booking_date_dialog.dart
-    │       ├── booking_date_picker.dart
-    │       ├── booking_dialog.dart
-    │       ├── booking_payment_method.dart
-    │       ├── booking_photo_upload.dart
-    │       ├── booking_section_title.dart
-    │       ├── booking_service_card.dart
-    │       ├── booking_summary.dart
-    │       ├── booking_technician_picker.dart
-    │       ├── booking_time_dialog.dart
-    │       ├── booking_time_picker.dart
-    │       └── technician_picker/
-    │           ├── booking_technician_picker.dart
-    │           ├── technician_image_section.dart
-    │           ├── technician_info_section.dart
-    │           ├── technician_picker_card.dart
-    │           ├── technician_pro_badge.dart
-    │           └── technician_selected_badge.dart
-    │
     ├── booking_confirmed/
-    │   ├── presentation/
-    │   │   └── booking_confirmed.dart
-    │   └── Widgets/
-    │       ├── confirmed_back_button.dart
-    │       ├── confirmed_badge.dart
-    │       ├── confirmed_details_card.dart
-    │       ├── confirmed_divider.dart
-    │       ├── confirmed_footer.dart
-    │       ├── confirmed_info_row.dart
-    │       ├── confirmed_success_icon.dart
-    │       ├── confirmed_title.dart
-    │       └── full_screen_map_screen.dart
-    │
     ├── bookings/
-    │   ├── cubit/
-    │   │   ├── bookings_cubit.dart
-    │   │   └── bookings_state.dart
-    │   ├── presentation/
-    │   │   └── bookings_screen.dart
-    │   ├── styles/
-    │   │   └── booking_styles.dart
-    │   └── widgets/
-    │       ├── swipe_hint.dart
-    │       ├── swipe_to_delete.dart
-    │       ├── booking_card/
-    │       │   ├── action_button.dart
-    │       │   ├── booking_card.dart
-    │       │   ├── booking_card_actions.dart
-    │       │   ├── booking_card_details.dart
-    │       │   ├── booking_card_header.dart
-    │       │   ├── detail_item.dart
-    │       │   ├── price_tag.dart
-    │       │   ├── service_image.dart
-    │       │   └── status_badge.dart
-    │       ├── booking_tabs/
-    │       │   ├── booking_tabs.dart
-    │       │   └── tab_button.dart
-    │       └── dialogs/
-    │           ├── cancel_booking_dialog.dart
-    │           ├── rating_dialog/
-    │           │   ├── feedback_chip.dart
-    │           │   ├── option_card.dart
-    │           │   ├── rating_dialog.dart
-    │           │   └── rating_progress.dart
-    │           └── steps/
-    │               ├── completion_step.dart
-    │               ├── done_step.dart
-    │               ├── feedback_step.dart
-    │               ├── not_completed_dialog.dart
-    │               └── rating_step.dart
-    │
     ├── location/
-    │   ├── cubit/
-    │   │   ├── location_cubit.dart
-    │   │   └── location_state.dart
-    │   ├── data/
-    │   │   └── repositories/
-    │   │       └── location_repository.dart
-    │   ├── domain/
-    │   │   └── entities/
-    │   │       └── location.dart
-    │   ├── presentation/
-    │   │   └── location_screen.dart
-    │   └── widget/
-    │       └── service_location_card.dart
-    │
     ├── how_it_works/
-    │   ├── screens/
-    │   │   └── how_it_works_screen.dart
-    │   └── widgets/
-    │       ├── bubble_outline_painter.dart
-    │       ├── how_it_works_dots.dart
-    │       ├── how_it_works_progress_bar.dart
-    │       ├── phone_mockup.dart
-    │       ├── rotating_background_rings.dart
-    │       ├── speech_bubble_clipper.dart
-    │       └── step_card.dart
-    │
     ├── profile/
-    │   ├── presentation/
-    │   │   └── profile_screen.dart
-    │   └── widgets/
-    │       ├── profile_header.dart
-    │       ├── profile_login_prompt.dart
-    │       ├── profile_logout_button.dart
-    │       ├── profile_menu_card.dart
-    │       ├── profile_menu_tile.dart
-    │       └── profile_section_title.dart
-    │
     └── offers/
-        └── offers_screen.dart
 ```
 
 ---
 
 ## 🛠️ Customize Demo Data
-
-All static data is located in `lib/data/`. You can easily modify or add new services, technicians, reviews, and categories.
 
 ### 📂 Data Files
 
@@ -513,3 +342,8 @@ flutter run
   ⭐ Don't forget to star this repository!
 </p>
 ```
+--- 
+
+---
+
+كده الـ README هتبقى احترافية والصور كلها هتظهر 👌
